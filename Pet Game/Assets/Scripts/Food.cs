@@ -6,6 +6,7 @@ public class Food : MonoBehaviour
 {
     public GameObject losePanel;
     private bool hasAlreadyTouched;
+    public GameObject soundPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class Food : MonoBehaviour
         else if (collision.gameObject.CompareTag("FoodManager") && !hasAlreadyTouched)
         {
             collision.gameObject.GetComponent<FoodManager>().AddFood(1);
+            Instantiate(soundPlayer, transform.position, Quaternion.identity);
             hasAlreadyTouched = true;
 
 
