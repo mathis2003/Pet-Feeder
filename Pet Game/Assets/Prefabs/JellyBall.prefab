@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 5bbc034424c4343fca537af6faf1394c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -133,4 +133,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   losePanel: {fileID: 0}
-  food: {fileID: 254786238894160656}

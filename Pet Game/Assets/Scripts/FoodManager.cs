@@ -41,7 +41,7 @@ public class FoodManager : MonoBehaviour
         }
         else 
         {
-            PlayerPrefs.SetInt("lvlUnlocked", nextLVL);
+            if (PlayerPrefs.GetInt("lvlUnlocked") < nextLVL) PlayerPrefs.SetInt("lvlUnlocked", nextLVL);
             winPanel.SetActive(true);
         }
 

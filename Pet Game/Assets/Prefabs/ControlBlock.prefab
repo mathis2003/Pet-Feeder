@@ -158,6 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5912e3a9b12430c9dc8b93b474f5f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftButton: b
-  rightButton: n
+  leftButton: x
+  rightButton: c
   speed: 5
