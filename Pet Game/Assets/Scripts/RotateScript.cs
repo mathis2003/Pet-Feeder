@@ -5,7 +5,8 @@ using UnityEngine;
 public class RotateScript : MonoBehaviour
 {
 
-    public string buttonKey;
+    public string leftButtonKey;
+    public string rightButtonKey;
     public float speed;
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,13 @@ public class RotateScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(buttonKey))
+        if (Input.GetKey(rightButtonKey))
         {
             transform.Rotate(0, 0, speed * Time.deltaTime);
+        }
+        if (Input.GetKey(leftButtonKey))
+        {
+            transform.Rotate(0, 0, -speed * Time.deltaTime);
         }
     }
 }

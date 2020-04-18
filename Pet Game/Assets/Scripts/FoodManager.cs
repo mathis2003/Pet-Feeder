@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FoodManager : MonoBehaviour
 {
     public int nextLVL; 
     public int totalFood;
     public GameObject winPanel;
-    public int foodInCage;
+    private int foodInCage = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,15 @@ public class FoodManager : MonoBehaviour
 
     public void WinLevel()
     {
-        PlayerPrefs.SetInt("lvlUnlocked", nextLVL);
-        winPanel.SetActive(true);
+        if (nextLVL == 6)
+        {
+            SceneManager.LoadScene(nextLVL);
+        }
+        else 
+        {
+            PlayerPrefs.SetInt("lvlUnlocked", nextLVL);
+            winPanel.SetActive(true);
+        }
+
     }
 }
