@@ -188,7 +188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This game was made for ludum dare 46 with the theme "keep it alive".
+  m_Text: This game was made for the ludum dare 46 compo with the theme "keep it alive".
 --- !u!222 &54135912
 CanvasRenderer:
   m_ObjectHideFlags: 0

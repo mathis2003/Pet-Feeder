@@ -478,8 +478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -279.5, y: 175.6}
-  m_SizeDelta: {x: 241, y: 98.7}
+  m_AnchoredPosition: {x: -263.8, y: 164.8}
+  m_SizeDelta: {x: 272.5, y: 120.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1529230000
 MonoBehaviour:
@@ -513,7 +513,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Try the keys that are written on the blocks to get the green food to the
-    dog.
+    dog. If you don't give him all of the food, he dies.
 --- !u!222 &1529230001
 CanvasRenderer:
   m_ObjectHideFlags: 0
